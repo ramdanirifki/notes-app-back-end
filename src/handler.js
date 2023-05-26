@@ -67,7 +67,7 @@ const getNoteByIdHandler = (request, h) => {
 };
 
 const editNoteByHandler = (request, h) => {
-  const { id } = request.prams;
+  const { id } = request.params;
 
   const { title, tags, body } = request.payload;
   const updateAt = new Date().toISOString();

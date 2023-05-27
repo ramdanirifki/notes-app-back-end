@@ -62,7 +62,7 @@ const getNoteByIdHandler = (request, h) => {
     message: 'Catatan tidak ditemukan',
   });
 
-  response.code(200);
+  response.code(404);
   return response;
 };
 
